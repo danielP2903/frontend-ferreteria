@@ -3,14 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {ListboxModule} from 'primeng/listbox';
+import { TestComponent } from './pages/test/test.component';
+import { TestModule } from './pages/test/test.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+  
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ListboxModule,
+    TestModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
